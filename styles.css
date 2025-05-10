@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+}
+
+/* RTL Support for Persian */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+}
+
+/* Language Selector */
+.language-selector {
+    margin-left: 15px;
+}
+
+.language-selector .btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Custom Colors */
+.bg-primary {
+    background-color: #2c3e50 !important;
+}
+
+.btn-primary {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+}
+
+.btn-primary:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+/* Editorial Board Cards */
+.editorial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorial-card .card-body {
+    flex: 1;
+}
+
+/* Contact Icons */
+.contact-info i {
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Transitions */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+} 
