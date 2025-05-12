@@ -48,19 +48,31 @@
     <header class="hero-section text-center py-5">
         <div class="container">
             <h1 class="display-4">Journal of Innovative Computational Methodologies</h1>
-            <p class="lead">Advancing Research in Computational Sciences</p>
+            <!-- <p class="lead">Advancing Research in Computational Sciences</p> -->
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">About the Journal</h2>
+            <h2 class="text-center mb-4">About The Journal</h2>
             <div class="row">
                 <div class="row-md-6">
-                    <p>The Journal of Innovative Computational Methodologies (JICM) is a peer-reviewed, open-access journal dedicated to publishing high-quality research in computational sciences, algorithms, and innovative methodologies.</p>
+                    <p>The Journal of Innovative Computational Methodologies (JICM) is a peer-reviewed academic publication dedicated to advancing the frontiers of computational science and engineering. Our mission is to foster interdisciplinary research that bridges theory and application, driving innovation in computational methodologies across diverse domains.</p>
+                    <br>
+                    <h3>Scope and Focus</h3>
+                    <p>JICM welcomes original contributions in areas such as:</p>
+                    <ul>
+                        <li><strong>Blockchain Technology</strong> – Novel approaches to optimizing memory usage, improving storage efficiency, and enhancing security mechanisms.</li>
+                        <li><strong>Machine Learning & Statistical Modeling</strong> – Rigorous evaluations of computational algorithms, including regression analysis, cross-validation, and error metrics.</li>
+                        <li><strong>Network Security & Systems</strong> – Research on protocol hardening, firewall configurations, and intrusion detection.</li>
+                        <li><strong>Quantum & Nano Computing</strong> – Cutting-edge developments in QCA technology and low-energy computing paradigms.</li>
+                        <li><strong>Game Development & Interactive Computing</strong> – Explorations in survival mechanics, inventory systems, and web-based accessibility.</li>
+                        <li><strong>Programming & Software Engineering</strong> – Innovations in coding methodologies, software optimization, and large-scale system design.</li>
+                        <li><strong>Algorithm Design & Analysis</strong> – Theoretical and practical advancements in computational efficiency, problem-solving techniques, and complexity reduction.</li>
+                    </ul>
+                    <p>While these areas represent key focus points, JICM embraces interdisciplinary research and innovative methodologies beyond these scopes. We encourage submissions that push the boundaries of computational thinking, regardless of traditional classifications.</p>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -182,16 +194,53 @@
         <div class="container">
             <h2 class="text-center mb-4">Submission Guidelines</h2>
             <div class="row">
-                <div class="row-md-6">
-                    <ul>
-                        <li>Manuscripts should be original and not previously published</li>
-                        <li>Format according to our template</li>
-                        <li>Submit through our online system</li>
-                    </ul>
+                <div class="col-md-12">
+                    <p id="submission-intro">
+                        <strong>Manuscript Preparation:</strong> Authors should ensure their manuscripts adhere to the following guidelines:
+                        <ul>
+                            <li>The paper must be original, unpublished, and not under review elsewhere.</li>
+                            <li>Manuscripts should be formatted according to the JICM template, available on the journal’s website.</li>
+                            <li>The recommended structure includes:
+                                <ul>
+                                    <li><strong>Title & Abstract</strong> – Clearly state the study’s focus and findings.</li>
+                                    <li><strong>Introduction</strong> – Define the problem, objectives, and significance.</li>
+                                    <li><strong>Methodology</strong> – Detail research methods and computational models.</li>
+                                    <li><strong>Results & Discussion</strong> – Present findings with critical analysis.</li>
+                                    <li><strong>Conclusion & Future Work</strong> – Summarize contributions and research directions.</li>
+                                    <li><strong>References</strong> – Follow the IEEE or ACM citation style (journal-specific preference).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" id="read-more-link">Read more...</a>
+                    </p>
+                    <div id="submission-details" style="display: none;">
+                        
+                        <strong>Submission Process:</strong>
+                        <ul>
+                            <li><strong>Manuscript Upload</strong> – Submit the paper via the journal’s online portal.</li>
+                            <li><strong>Peer Review</strong> – Papers undergo a double-blind peer-review process.</li>
+                            <li><strong>Revision & Acceptance</strong> – Authors will receive feedback for revisions before final acceptance.</li>
+                            <li><strong>Publication</strong> – Accepted manuscripts are published online and assigned a DOI.</li>
+                        </ul>
+                        <strong>Ethical Considerations:</strong>
+                        <ul>
+                            <li>Authors must disclose any conflicts of interest.</li>
+                            <li>Plagiarism and self-plagiarism are strictly prohibited—papers must be checked using plagiarism detection tools before submission.</li>
+                            <li>Research involving human participants or sensitive data must comply with ethical standards and appropriate approvals.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('read-more-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('submission-details').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
